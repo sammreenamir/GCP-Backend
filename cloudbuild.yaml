@@ -24,12 +24,7 @@ steps:
     gcloud config set project cloud-resume-sammreen        
     gcloud config set functions/region us-central1         
     echo "Deploying Cloud Function..."
-    gcloud functions deploy count-function                 
-      --region=us-central1                                
-      --runtime=python311                                  
-      --trigger-http                                      
-      --source=/workspace                                 
-      --entry-point=visitor_counter                        
+    gcloud functions deploy count-function --region=us-central1 --runtime=python311 --trigger-http --source=/workspace --entry-point=visitor_counter
 
 options:
   logging: CLOUD_LOGGING_ONLY
