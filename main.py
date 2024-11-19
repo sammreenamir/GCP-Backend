@@ -17,8 +17,8 @@ def visitor_counter(request):
         }
         return ('', 204, headers)
 
-    # Reference to the visitor count document in Firestore (updated to match collection and document name)
-    doc_ref = db.collection('visitor-count').document('counter')
+    # Reference to the visitor count document in Firestore
+    doc_ref = db.collection('visitorCounts').document('counter')
 
     headers = {'Access-Control-Allow-Origin': '*'}
 
