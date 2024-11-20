@@ -28,7 +28,7 @@ steps:
       --region=us-central1 \
       --runtime=python311 \
       --trigger-http \
-      --source=/cloud-resume-terraform.zip \
+      --source=/workspace \
       --entry-point=visitor_counter
 
 options:
